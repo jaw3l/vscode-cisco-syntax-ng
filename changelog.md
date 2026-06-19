@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.11.0] - 06-19-2026
+
+### Added
+
+* Add Syntax for SVI (Switched Virtual Interface) configuration
+* Add Syntax for HSRP (Hot Standby Router Protocol): standby, timers, priority, preempt, track, authentication
+* Add Syntax for VRRP (Virtual Router Redundancy Protocol): vrrp, timers, priority, preempt, authentication, track
+* Add Syntax for GLBP (Gateway Load Balancing Protocol): glbp, timers, priority, preempt, weight, load-balancing, forwarder
+* Add Syntax for IP routing commands: ip routing, ip default-gateway, ip helper-address, ip directed-broadcast, ip redirects, ip unreachables
+* Add Syntax for PIM on SVI: ip pim (sparse-mode|dense-mode|sparse-dense-mode)
+* Add Syntax for NAT on SVI: ip nat inside/outside, ip virtual-reassembly
+* Add Syntax for routed port (no switchport)
+
+### Changed
+
+None
+
+### Removed
+
+None
+
 ## [1.10.0] - 06-19-2026
 
 ### Added

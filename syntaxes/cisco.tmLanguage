@@ -394,6 +394,101 @@
 			<key>name</key>
 			<string>keyword.other.stp.cisco</string>
 		</dict>
+		<!-- SVI (Switched Virtual Interface) and Routed Port -->
+		<dict>
+			<key>match</key>
+			<string>\b(ip (routing|default-gateway|default-network|directed-broadcast|redirects|unreachables|igmp-helper-address|split-horizon|local-proxy-arp|proxy-arp| gratuitous-arp|route-cache))\b</string>
+			<key>name</key>
+			<string>keyword.other.svi.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(ip helper-address)\b</string>
+			<key>name</key>
+			<string>keyword.other.svi.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(ip (nat (inside|outside)| virtual-reassembly| tcp-adjust-mss))\b</string>
+			<key>name</key>
+			<string>keyword.other.svi.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(ip pim (sparse-mode|dense-mode|sparse-dense-mode|neighbor-filter|passive|dr-priority))\b</string>
+			<key>name</key>
+			<string>keyword.other.svi.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(ip virtual-router mac-address)\b</string>
+			<key>name</key>
+			<string>keyword.other.svi.cisco</string>
+		</dict>
+		<!-- HSRP (Hot Standby Router Protocol) -->
+		<dict>
+			<key>match</key>
+			<string>\bstandby\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bstandby (version|timers|priority|preempt|ip|name|track|authentication|mac-address|msec|delay (minimum|reload))\b</string>
+			<key>name</key>
+			<string>keyword.other.hsrp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(active|standby|listen|init)\b</string>
+			<key>name</key>
+			<string>keyword.other.hsrp.cisco</string>
+		</dict>
+		<!-- VRRP (Virtual Router Redundancy Protocol) -->
+		<dict>
+			<key>match</key>
+			<string>\bvrrp\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bvrrp (version|timers|priority|preempt|ip|description|authentication|track|delay (reload))\b</string>
+			<key>name</key>
+			<string>keyword.other.vrrp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(learn|master|backup|initialize)\b</string>
+			<key>name</key>
+			<string>keyword.other.vrrp.cisco</string>
+		</dict>
+		<!-- GLBP (Gateway Load Balancing Protocol) -->
+		<dict>
+			<key>match</key>
+			<string>\bglbp\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bglbp (timers|priority|preempt|ip|name|weight|load-balancing|authentication|track|forwarder|mac-address)\b</string>
+			<key>name</key>
+			<string>keyword.other.glbp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(round-robin|weighted|host-dependent)\b</string>
+			<key>name</key>
+			<string>keyword.other.glbp.cisco</string>
+		</dict>
+		<!-- Routed port (no switchport) -->
+		<dict>
+			<key>match</key>
+			<string>\b(routed-port)\b</string>
+			<key>name</key>
+			<string>keyword.other.interface.cisco</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.cisco</string>
