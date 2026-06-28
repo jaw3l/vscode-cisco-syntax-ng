@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.12.0] - 06-19-2026
+
+### Added
+
+* Add expanded STP syntax: spanning-tree mode (pvst/rapid-pvst/mst), vlan, mst, extend, guard, link-type, transmit-hold-count, pathcost
+* Add MST configuration: instance, region, name, revision, max-hops
+* Add UDLD commands: udld enable, udld disable, udld aggressive
+* Add Storm Control: storm-control broadcast/multicast/unicast level/pps
+* Add Errdisable: errdisable recovery cause/interval, errdisable detect cause
+
+### Changed
+
+None
+
+### Removed
+
+None
+
 ## [1.11.0] - 06-19-2026
 
 ### Added
