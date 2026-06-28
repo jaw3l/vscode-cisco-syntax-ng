@@ -366,7 +366,25 @@
 		<!-- STP keywords -->
 		<dict>
 			<key>match</key>
-			<string>\bspanning-tree (portfast|bpduguard|bpdufilter|backbonefast|uplinkfast)\b</string>
+			<string>\bspanning-tree\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bspanning-tree (vlan|mst|extend|mode|guard|portfast|link-type|bpduguard|bpdufilter|backbonefast|uplinkfast|cost|priority|root|hello-time|forward-time|max-age|transmit-hold-count|pathcost)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bspanning-tree mode (pvst|rapid-pvst|mst)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(root (primary|secondary)|port (priority|fast))\b</string>
 			<key>name</key>
 			<string>keyword.other.stp.cisco</string>
 		</dict>
@@ -378,21 +396,61 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(root (primary|secondary)|cost|priority|guard|filter)\b</string>
+			<string>\b(guard (loop|root|none)|portfast (default|bpduguard|bpdufilter))\b</string>
 			<key>name</key>
 			<string>keyword.other.stp.cisco</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(port (priority|fast))\b</string>
+			<string>\b(loopguard|loop-guard)$</string>
 			<key>name</key>
 			<string>keyword.other.stp.cisco</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(loopguard|loop-guard)\b</string>
+			<string>\blink-type (auto|point-to-point|shared)\b</string>
 			<key>name</key>
 			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(pvst|rapid-pvst|mst)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<!-- MST (Multiple Spanning Tree) -->
+		<dict>
+			<key>match</key>
+			<string>\binstance (\d+) vlan (\d+[\d,-]*)\b</string>
+			<key>name</key>
+			<string>keyword.other.mst.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(region|name|revision|max-hops)\b</string>
+			<key>name</key>
+			<string>keyword.other.mst.cisco</string>
+		</dict>
+		<!-- UDLD -->
+		<dict>
+			<key>match</key>
+			<string>\budld (enable|disable|aggressive)\b</string>
+			<key>name</key>
+			<string>keyword.other.interface.cisco</string>
+		</dict>
+		<!-- Storm Control -->
+		<dict>
+			<key>match</key>
+			<string>\bstorm-control (broadcast|multicast|unicast) (level|pps)\b</string>
+			<key>name</key>
+			<string>keyword.other.interface.cisco</string>
+		</dict>
+		<!-- Errdisable -->
+		<dict>
+			<key>match</key>
+			<string>\berrdisable (recovery (cause|interval)|detect cause)\b</string>
+			<key>name</key>
+			<string>keyword.other.cisco</string>
 		</dict>
 		<!-- SVI (Switched Virtual Interface) and Routed Port -->
 		<dict>
