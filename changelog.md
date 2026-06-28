@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.12.1] - 06-19-2026
+
+### Added
+
+* Add comprehensive supported commands list to README.md
+
+### Changed
+
+None
+
+### Removed
+
+None
+
 ## [1.12.0] - 06-19-2026
 
 ### Added
